@@ -1,0 +1,15 @@
+if [ -d $1 ]; then 
+echo "$1 目录已经存在！"
+exit 1
+else
+mkdir $1
+cd $1
+touch index.html
+echo -e "<!doctype> \n <title>Hello</title> \n <h1>Hi</h1>">index.html
+mkdir css js
+touch css/style.css js/main.js
+echo -e "h1 \n {color:red;}">css/style.css
+echo -e "var string = "Hello World" \n alert(string)">js/main.js
+echo "创建成功！"
+exit 0
+fi
