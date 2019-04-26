@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+header, footer {
+    height: 10vh;
+    background: black;
+}
+
+main {
+    background: gray url(../img/bg.jpg) no-repeat center center;
+    background-size: cover;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#keyBoard>div {
+    margin: 15px 0;
+}
+#keyBoard>div:nth-child(2){
+    margin-left: 20px;
+}
+#keyBoard>div:nth-child(3){
+    margin-left: 50px;
+}
+#keyBoard>div>kbd {
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    position: relative; 
+    margin: 0 5px;
+    vertical-align: bottom;
+}
+
+#keyBoard kbd>img {
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    bottom: 2px;
+    left: 2px;
+}
+
+#keyBoard kbd>span {
+    text-transform: uppercase;
+    position: absolute;
+    font-size: 20px;
+    font-family: 'Calibri';
+    left: 5px;
+    top:2px;
+}
+
+.wrapper {
+    display: inline-block;
+    background: rgba(189, 189, 189, 0.3);
+}
+
+#keyBoard button {
+    background: inherit;
+    position: absolute;
+    font-family: '楷体';
+    right: 5px;
+    bottom: 2px;
+    display: none;
+    cursor: pointer;
+}
+
+#keyBoard kbd:hover>button {
+    display: inline-block;
+}
+
+.kbdStyle {
+    border: 1px solid #ededed;
+    border: 2px solid #edede0;
+    border-radius: 9px;
+    background: radial-gradient(ellipse at center, #d2dfed 0%, #bed0ea 13%, #bed0ea 46%, #bed0ea 46%, #afc7e8 78%, #bad0ef 100%, #99b5db 100%);
+    box-shadow: 0 3px 0px 1px #bebdbd;
+}
+
+#keyBoard kbd:hover {
+    box-shadow: none;
+    height: 57px;
+}
